@@ -111,6 +111,7 @@ void tree::remove(int data, node* &head){
 			toRemove->data = temp->data;
 			if (temp == parent->left){
 				if (temp->left) parent->left = temp->left;
+				else parent->left = NULL;
 			}
 			else {
 				if (temp->left) parent->right = temp->left;
